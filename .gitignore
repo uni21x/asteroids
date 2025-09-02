@@ -1,25 +1,2 @@
-# Python-generated files
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-
-# Weitere Python/Editor/OS/Lock-Dateien
-*.pyo
-*.pyd
-venv/
-ENV/
-*.swp
-*.swo
-*.bak
-*.tmp
-.DS_Store
-Thumbs.db
-uv.lock
-*.log
-.vscode/
+.venv/
