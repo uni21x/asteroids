@@ -29,6 +29,13 @@ Screen height: {SCREEN_HEIGHT}""")
             if event.type == pygame.QUIT:
                 return
         updatable.update(dt)
+        
+        # Check for collisions with asteroids
+        for asteroid in asteroids:
+            if player.collide(asteroid):
+                print("Game over!")
+                return
+                
         for obj in drawable:
             obj.draw(screen)
         pygame.display.flip()
