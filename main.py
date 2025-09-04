@@ -38,6 +38,12 @@ Screen height: {SCREEN_HEIGHT}""")
             if player.collide(asteroid):
                 print("Game over!")
                 return
+        for shot in shots:
+            for asteroid in asteroids:
+                if shot.collide(asteroid):
+                    asteroid.kill()
+                    shot.kill()
+                    break
                 
         for obj in drawable:
             obj.draw(screen)
