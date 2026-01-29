@@ -23,6 +23,7 @@ This project was created as a practice exercise for the [Boot.dev](https://www.b
 
 ## ⚙️ Installation
 
+### macOS / Linux
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -30,12 +31,14 @@ python -m pip install -U pip
 python -m pip install pygame==2.6.1
 ```
 
+### Windows (PowerShell)
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -U pip
 python -m pip install pygame==2.6.1
 ```
+
 ---
 
 ## ▶️ Run
