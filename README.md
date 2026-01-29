@@ -1,8 +1,7 @@
 # 🪐 Asteroids
 
-Asteroids is a small **pygame** clone. Pilot your ship, dodge asteroids, and blast them into smaller chunks.
-
-This project was created as a practice exercise for the Boot.dev course.
+Asteroids is a small clone of the classic arcade game, built with **pygame**. Pilot your ship, dodge asteroids, and blast them into smaller chunks.  
+This project was created as a practice exercise for the [Boot.dev](https://www.boot.dev) course.
 
 ---
 
@@ -27,21 +26,16 @@ This project was created as a practice exercise for the Boot.dev course.
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r <(python - <<'PY'
-import tomllib
-from pathlib import Path
-pyproject = tomllib.loads(Path('pyproject.toml').read_text())
-print("\n".join(pyproject['project']['dependencies']))
-PY
-)
+python -m pip install -U pip
+python -m pip install pygame==2.6.1
 ```
 
-Alternatively, install directly:
-
-```bash
-pip install pygame==2.6.1
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+python -m pip install pygame==2.6.1
 ```
-
 ---
 
 ## ▶️ Run
